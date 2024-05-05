@@ -24,8 +24,9 @@ Step 5:
 Compare Q-Learning policy and state values with Monte Carlo results for the given RL environment.
 
 ## Q LEARNING FUNCTION
-Developed by: Koduru Sanath Kumar Reddy
-Reg no: 212221240024
+```
+Developed by: M.Gunasekhar
+Reg no: 212221240014
 def q_learning(env, 
                gamma=1.0,
                init_alpha=0.5,
@@ -58,12 +59,11 @@ def q_learning(env,
     V=np.max(Q,axis=1)
     pi=lambda s:{s:a for s,a in enumerate(np.argmax(Q,axis=1))}[s]
     return Q, V, pi, Q_track, pi_track
- 
+ ```
 ## OUTPUT:
 ![Screenshot 2024-05-05 230315](https://github.com/gunasekhar159/q-learning/assets/95043391/31f5d911-cb37-4dbb-971c-3d74c585c2a3)
 ![Screenshot 2024-05-05 230651](https://github.com/gunasekhar159/q-learning/assets/95043391/1d11dde0-d9c2-47c5-a2d2-6686e7362534)
 ![Screenshot 2024-05-05 230823](https://github.com/gunasekhar159/q-learning/assets/95043391/9ae8c532-b998-4a83-8731-c2f2e2169bfb)
-
 ![Screenshot 2024-05-05 230905](https://github.com/gunasekhar159/q-learning/assets/95043391/b9e4de56-67eb-4b40-bdbe-372ca26e18d4)
 
 ## RESULT:
